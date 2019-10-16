@@ -16,8 +16,8 @@ class KpTopSellersLabel extends Module
         $this->bootstrap = true;
         parent::__construct();
 
-        $this->displayName = $this->trans('Top seller label', array(), 'Modules.TopSellersLabel.Admin');
-        $this->description = $this->trans('Module will show "top seller" label on product list.', array(), 'Modules.TopSellersLabel.Admin');
+        $this->displayName = $this->trans('Top seller label', array(), 'Modules.Kptopsellerslabel.Admin');
+        $this->description = $this->trans('Module will show "top seller" label on product list.', array(), 'Modules.Kptopsellerslabel.Admin');
     }
 
     public function isUsingNewTranslationSystem()
@@ -57,7 +57,7 @@ class KpTopSellersLabel extends Module
         if (in_array($product['id_product'], self::$topSellersIds)) {
             $flags['topseller'] = [
                 'type' => 'topseller',
-                'label' => $this->trans('Top seller', array(), 'Modules.TopSellersLabel.Admin')
+                'label' => $this->trans('Top seller', array(), 'Modules.Kptopsellerslabel.Admin')
             ];
         }
 
